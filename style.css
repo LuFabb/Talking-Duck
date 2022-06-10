@@ -1,0 +1,17 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* generic rules */
+
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background: linear-gradient(#3535ec, #b62897);
+  background-attachment: fixed;
+  color: white;
+}
