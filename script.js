@@ -7,5 +7,30 @@ const duckFigure = document.querySelector('figure');
 // if someone click the button, do what i tell you
 playButton.addEventListener('click', function(){
   const textLength = textArea.value.trim().length;
-  console.log(textLength)
-})
+
+  if (textLength > 0) {
+
+    talk()
+
+  }
+ 
+});
+
+// create a function to make the duck talk
+
+function talk() {
+  // 1 - retrieve tone of voice from the text
+  const text = textArea.value;
+  const pitch = pitchBar.value;
+ 
+  // 2 - prepare a utterance for the speetch Synthesizer
+  const utterance = new SpeechSynthesisUtterance(text);
+
+  // 3 - we specify other details for the utterance
+  utterance.pitch = pitch;
+  
+  // let's the duck can talk!
+  speechSynthesis.speak(utterance);
+
+}
+
