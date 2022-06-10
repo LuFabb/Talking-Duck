@@ -95,3 +95,13 @@ label {
   display: none;
 }
 
+/* Duck animated class inside talking class */
+.talking .animated-duck {
+  display: block;
+}
+
+/* Duck static class inside talking class */
+
+.talking .static-duck {
+  display: none;
+}
