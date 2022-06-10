@@ -16,6 +16,11 @@ html {
   color: white;
 }
 
+img {
+  max-width: 100%;
+}
+
+
 /* main container */
 
 .container {
@@ -83,3 +88,10 @@ label {
   font-size: 100%;
   margin-bottom: 12px;
 }
+
+/* Ducks */
+
+.animated-duck {
+  display: none;
+}
+
