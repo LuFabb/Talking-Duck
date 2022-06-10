@@ -67,6 +67,12 @@ button {
   background-color: #f81669;
 }
 
+/* style button only when disabled */
+button:disabled {
+  opacity: 0.6;
+  background-color: #dedede;
+ }
+
 button img {
   vertical-align: middle;
   width: 40%;

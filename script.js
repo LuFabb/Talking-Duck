@@ -34,12 +34,19 @@ function talk() {
 
   // when the duck start talk...
   utterance.addEventListener('start', function() {
+     //lock the controls when the duck talk
+    textArea.disabled = true;
+    pitchBar.disabled = true;
+    playButton.disabled = true;
     // let's animate the duck
   duckFigure.classList.add('talking')
   });
 
   // when the duck stop talking...
   utterance.addEventListener('end', function() {
+    textArea.disabled = false;
+    pitchBar.disabled = false;
+    playButton.disabled = false;
 
   //we bring the static duck
   duckFigure.classList.remove('talking');
