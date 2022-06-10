@@ -43,3 +43,43 @@ textarea {
   padding: 24px;
   font-family: 'Roboto', sans-serif;
 }
+
+/* Controls */
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+/* Play button */
+
+button {
+  width: 64px;
+  height: 56px;
+  border-radius: 6px;
+  border: none;
+  background-color: #f81669;
+}
+
+button img {
+  vertical-align: middle;
+  width: 40%;
+}
+
+/* Pitch controls */
+.pitch-controls {
+  width: 70%;
+}
+
+/* Pitch bar */
+input {
+  width: 100%;
+  accent-color: white;
+}
+
+label {
+  display: block;
+  font-size: 100%;
+  margin-bottom: 12px;
+}
