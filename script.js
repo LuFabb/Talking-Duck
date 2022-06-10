@@ -32,5 +32,18 @@ function talk() {
   // let's the duck can talk!
   speechSynthesis.speak(utterance);
 
+  // when the duck start talk...
+  utterance.addEventListener('start', function() {
+    // let's animate the duck
+  duckFigure.classList.add('talking')
+  });
+
+  // when the duck stop talking...
+  utterance.addEventListener('end', function() {
+
+  //we bring the static duck
+  duckFigure.classList.remove('talking');
+    
+  })
 }
 
