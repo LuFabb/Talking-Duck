@@ -23,3 +23,9 @@ html {
   margin: 0 auto;
   padding: 16px;
 }
+
+/* Logo */
+
+header img {
+  width: 56px;
+}
